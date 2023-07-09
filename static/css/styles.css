@@ -26,7 +26,20 @@
 
 #chat-messages {
   height: 150px;
-  overflow-y: scroll;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.new-message {
+  background-color: #02939c;
+  color: white;
+  max-width: 180px;
+  width: max-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-self: flex-end;
+  margin: 2px;
+  border-radius: 20px;
 }
 
 #chat-input {
@@ -58,13 +71,4 @@
   color: #ffffff;
   font-weight: bold;
   cursor: pointer;
-}
-
-.new-message {
-  background-color: #02939c;
-  color: white;
-  max-width: 180px;
-  width: max-content;
-  padding-left: 10px;
-  padding-right: 10px;
 }
